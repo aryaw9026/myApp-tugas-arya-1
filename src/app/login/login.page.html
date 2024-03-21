@@ -1,0 +1,50 @@
+<!-- <ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title>Login</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-input id="container" label="Outline input" label-placement="floating" fill="outline" placeholder="Enter text"></ion-input>
+
+<ion-content [fullscreen]="true">
+  <ion-header collapse="condense">
+    <ion-toolbar>
+      <ion-title size="large">Login</ion-title>
+    </ion-toolbar>
+  </ion-header>
+</ion-content>
+ -->
+
+ <!-- login.page.html -->
+<!-- <ion-header>
+   <ion-toolbar>
+     <ion-title>
+       Login
+     </ion-title>
+   </ion-toolbar>
+ </ion-header>
+  -->
+
+ 
+
+ <ion-content class="ion-padding">
+   <ion-item id="login">
+    <ion-col size="7">
+      <img class="img" src="./assets/loginarya.png" alt=""><br>
+    </ion-col>
+      <strong class="title"><h1>APP TUGAS MOBILE</h1></strong>
+      <p>Masuk sistem atau <a style="text-decoration: underline; color: blue;" href="">Buat akun baru</a></p>
+    
+
+     <ion-label position="floating">Username</ion-label>
+     <ion-input type="text" [(ngModel)]="username"></ion-input>
+   </ion-item>
+   <ion-item>
+     <ion-label position="floating">Password</ion-label>
+     <ion-input type="password" [(ngModel)]="password"></ion-input>
+   </ion-item><br><br>
+
+   <ion-button color="light" expand="block" (click)="login()">Masuk</ion-button>
+   <div class="lpass"><a style="text-decoration: underline; color: blue;" href="#" class="forgot-password">Lupa Password</a></div>
+
+ </ion-content>

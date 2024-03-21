@@ -1,0 +1,24 @@
+<ion-header>
+   <ion-toolbar>
+      <ion-buttons slot="start">
+         <ion-back-button defaultHref="/halamanutama"></ion-back-button>
+      </ion-buttons>
+     <ion-title>
+       Konversi Massa
+     </ion-title>
+   </ion-toolbar>
+ </ion-header>
+ 
+ <ion-content class="ion-padding">
+   <ion-item>
+     <ion-label position="stacked">Kilogram</ion-label>
+     <ion-input type="number" [(ngModel)]="kilogram"></ion-input>
+   </ion-item>
+   <ion-item>
+     <ion-label position="stacked">Pound</ion-label>
+     <ion-input type="number" [(ngModel)]="pound"></ion-input>
+   </ion-item>
+   <ion-button color="medium" expand="block" (click)="convertToPound()">Convert ke Pound</ion-button>
+   <ion-button color="warning" expand="block" (click)="convertToKilogram()">Convert ke Kilogram</ion-button>
+ </ion-content>
+ 

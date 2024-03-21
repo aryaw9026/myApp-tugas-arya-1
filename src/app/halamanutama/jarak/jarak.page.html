@@ -1,0 +1,24 @@
+<ion-header>
+   <ion-toolbar>
+      <ion-buttons slot="start">
+         <ion-back-button defaultHref="/halamanutama"></ion-back-button>
+      </ion-buttons>
+     <ion-title>
+       Konversi Jarak
+     </ion-title>
+   </ion-toolbar>
+ </ion-header>
+
+ <ion-content class="ion-padding">
+   <ion-item>
+     <ion-label position="stacked">Kilometer</ion-label>
+     <ion-input type="number" [(ngModel)]="kilometer"></ion-input>
+   </ion-item>
+   <ion-item>
+     <ion-label position="stacked">Mil</ion-label>
+     <ion-input type="number" [(ngModel)]="mil"></ion-input>
+   </ion-item>
+   <ion-button color="warning" expand="block" (click)="convertToMil()">Convert ke Mil</ion-button>
+   <ion-button color= "dark" expand="block" (click)="convertToKilometer()">Convert ke Kilometer</ion-button>
+ </ion-content>
+ 
